@@ -1,0 +1,28 @@
+.destroy-this-component{
+    display: none;
+}
+
+.setup-input-field{
+    width: 100%;
+}
+
+.text-input-marker-text{
+    margin-left: auto;
+}
+
+.generator-action-button{
+    width: 100%;
+    height: 50px;
+}
+
+.generate-clear-sequence{
+    text-align: center;
+}
+
+.generator-input-field{
+    height: 50px;
+}
+
+.card-title-text{
+    text-align: center;
+}
