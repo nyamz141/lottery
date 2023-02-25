@@ -21,6 +21,11 @@ pipeline{
                 sh "docker build -t munya141/simple-lottery:latest"
             }
         }
+        stage("Upload image to docker hub"){
+            steps{
+                
+            }
+        }
         stage("Wait for 5 minutes to allow image upload"){
             sh "sleep 500"
         }
