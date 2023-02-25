@@ -6,7 +6,7 @@ const GeneratedResults = ({value}) =>{
         return <SingleResult data={sequence} key={index}/>
     })
     return(
-        <div className="results-parent">
+        <div data-testid="results-parent-element" className="results-parent">
             {results}
         </div>
     )

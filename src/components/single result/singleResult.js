@@ -1,4 +1,3 @@
-import axios from "axios"
 import "./singleResult.css"
 
 function SingleResult({data}){
@@ -15,15 +14,6 @@ function SingleResult({data}){
         return result
     }
     const resultData = processSequence()
-
-    const saveSequence = async () =>{
-        const payload = {value: resultData}
-        await axios.post("https://localhost:5000/save/new/sequence", payload)
-            .then(response => console.log(response))
-            .catch(error => {
-                console.log("encountered error", error)
-            })
-    }
     
     return(
         <div className="card border-success mb-3 mt-3 results-display-card">

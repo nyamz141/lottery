@@ -160,22 +160,22 @@ function SequenceGenerator(){
                     <div className="row">
                         <div className="col-sm-12 col-md-3">
                             <div className="setup-input-field mb-3">
-                                <input type="number" onChange={minValueEntered} value={minValue} className="form-control generator-input-field" id="floatingInput" placeholder="minimum value" />
+                                <input type="number" data-testid="min-generator-value" onChange={minValueEntered} value={minValue} className="form-control generator-input-field" id="floatingInput" placeholder="minimum value" />
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="setup-input-field mb-3">
-                                <input type="number" onChange={maxValueEntered} value={maxValue} className="form-control generator-input-field" id="floatingInput" placeholder="maximum value" />
+                                <input type="number" data-testid="max-generator-value" onChange={maxValueEntered} value={maxValue} className="form-control generator-input-field" id="floatingInput" placeholder="maximum value" />
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="setup-input-field  mb-3">
-                                <input type="number" onChange={numberOfColumnsEntered} value={columns} className="form-control generator-input-field" id="floatingInput" placeholder="column numbers" />
+                                <input type="number" data-testid="generator-column-value" onChange={numberOfColumnsEntered} value={columns} className="form-control generator-input-field" id="floatingInput" placeholder="column numbers" />
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="setup-input-field mb-3">
-                                <input type="number" onChange={numberOfRowsEntered} value={rows} className="form-control generator-input-field" id="floatingInput" placeholder="numbers of rows" />
+                                <input type="number" data-testid="generator-row-value" onChange={numberOfRowsEntered} value={rows} className="form-control generator-input-field" id="floatingInput" placeholder="numbers of rows" />
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-6">
