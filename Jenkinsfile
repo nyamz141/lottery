@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    tools{
+        nodejs "Node"
+    }
     stages{
         stage("Install Node npm"){
             steps{
@@ -20,17 +23,6 @@ pipeline{
             steps{
                 sh "docker build -t munya141/simple-lottery:latest"
             }
-        }
-        stage("Upload image to docker hub"){
-            steps{
-                
-            }
-        }
-        stage("Wait for 5 minutes to allow image upload"){
-            sh "sleep 500"
-        }
-        stage("Update Kubernetes Deployment to new version of image"){
-            
         }
     }
 }
