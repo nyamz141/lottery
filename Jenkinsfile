@@ -21,7 +21,7 @@ pipeline{
         }
         stage("Build docker image of the app"){
             steps{
-                sh "docker build -t munya141/simple-lottery:latest"
+                sh "docker build -t munya141/simple-lottery:latest ."
             }
         }
     }
