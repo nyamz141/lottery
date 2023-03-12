@@ -24,5 +24,13 @@ pipeline{
                 sh "docker build -t munya141/simple-lottery:latest ."
             }
         }
+        stage("push to docker hub"){
+            steps{
+                withCredentials([usernamePassword(credentialsId: 'DockerHubAuth', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
+        	        sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
+                    sh 'docker push munya141/simple-lottery:latest'
+                }
+            }
+        }
     }
 }
